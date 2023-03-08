@@ -24,11 +24,6 @@ public class ListingController {
 
         return listingRepository.findByPriceBetweenAndMinCpmBetween(minPrice,maxPrice,minMinCpm,maxMinCpm);
     }
-    @GetMapping("/listingsAll")
-    public List<Listing> getListings() {
-
-        return (List<Listing>) listingRepository.findAll();
-    }
 
 
 }
