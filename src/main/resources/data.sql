@@ -10,4 +10,4 @@ CREATE TABLE listing(
     priority DOUBLE PRECISION,
     bid_price DOUBLE PRECISION
                     )
-    AS SELECT * FROM CSVREAD('listing-details.csv');
+    AS SELECT * FROM CSVREAD('src/listing-details.csv');
